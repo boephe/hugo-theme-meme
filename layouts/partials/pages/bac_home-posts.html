@@ -1,4 +1,5 @@
 <main class="main single" id="main">
+    <p>A blog about me achieving my mediocrity!</p>
     <div class="main-inner">
         {{ $paginator := .Paginate (where .Site.RegularPages "Section" "in" .Site.Params.mainSections) }}
         {{ range $paginator.Pages }}
